@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-emerald p-4">
       <ul className="flex justify-around">
         <li>
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? 'text-blue-500 font-bold' : 'text-white hover:text-gray-300'
+              isActive ? 'text-white font-bold' : 'text-white hover:text-gray-300'
             }
             end
           >
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              isActive ? 'text-blue-500 font-bold' : 'text-white hover:text-gray-300'
+              isActive ? 'text-white font-bold' : 'text-white hover:text-gray-300'
             }
           >
             About
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
           <NavLink
             to="/referral-links"
             className={({ isActive }) =>
-              isActive ? 'text-blue-500 font-bold' : 'text-white hover:text-gray-300'
+              isActive ? 'text-white font-bold' : 'text-white hover:text-gray-300'
             }
           >
             Referral Links
@@ -40,12 +40,13 @@ const Navbar: React.FC = () => {
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              isActive ? 'text-blue-500 font-bold' : 'text-white hover:text-gray-300'
+              isActive ? 'text-white font-bold' : 'text-white hover:text-gray-300'
             }
           >
             Contact
           </NavLink>
         </li>
+
       </ul>
     </nav>
   );
