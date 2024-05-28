@@ -14,6 +14,10 @@ const Home: React.FC = () => {
     setIsModalOpen(false);
   };
 
+  const redirectToSignup = () => {
+    window.location.href = 'https://lb.benchmarkemail.com//listbuilder/signupnew?IkfHTmyPVq%252BE4yaUvcDMH%252F5pwVnAjsSIAa2n1gFziWPtO5iNRn8gS049TyW7spdJ';
+  };
+
   return (
     <div className="min-h-screen bg-white text-emerald">
       {/* Hero Section */}
@@ -24,20 +28,15 @@ const Home: React.FC = () => {
         </p>
         <div className="flex space-x-4">
           <button
-            onClick={openModal}
+            onClick={redirectToSignup}
             className="bg-white text-emerald font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-200"
           >
             Join Our Email List
           </button>
-          <button
-            onClick={() => navigate('/about')}
-            className="bg-white text-emerald font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-200"
-          >
-            Learn More About Us
-          </button>
+
         </div>
       </section>
-      
+
       {/* Features Section */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
@@ -58,7 +57,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-20 bg-white text-center">
         <div className="max-w-4xl mx-auto px-6">
@@ -74,7 +73,7 @@ const Home: React.FC = () => {
           </button>
         </div>
       </section>
-      
+
       <Modal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
