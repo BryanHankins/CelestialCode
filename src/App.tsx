@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -7,14 +7,23 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/Privacypolicy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import './index.css';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    const handleGoogleTagManager = () => {
+      if (window.gtag) {
+        window.gtag('config', 'AW-16570659253');
+      }
+    };
+
+    handleGoogleTagManager();
+  }, []);
+
   return (
     <Router>
-      <div className="min-h-screen emerald text-black flex flex-col">
+      <div className="flex flex-col min-h-screen">
         <Navbar />
-        <div className="flex-grow p-4">
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -22,7 +31,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>
