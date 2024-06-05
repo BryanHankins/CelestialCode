@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import ReferralLinks from './pages/ReferralLinks';
+import AmazonReferrals from './pages/AmazonReferrals';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/Privacypolicy';
 import Navbar from './components/Navbar';
@@ -28,6 +29,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/referral-links" element={<ReferralLinks />} />
+            <Route path="/amazon-referrals" element={<AmazonReferrals />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
