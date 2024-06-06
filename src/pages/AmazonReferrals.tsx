@@ -26,7 +26,30 @@ const AmazonReferrals: React.FC = () => {
       {/* Content */}
       <section className="py-12">
         <div className="container mx-auto px-6">
-          
+                    {/* Kids' Summer Fun */}
+                    <div className="mb-12">
+            <h2 className="text-3xl font-bold text-emerald mb-4">Kids' Summer Fun</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-bold text-emerald mb-4">Water Play Sprinkler Set</h3>
+                <div className="w-full h-64 mb-4 overflow-hidden">
+                  <img src={kidsprinker} alt="Water Play Sprinkler Set" className="w-full h-full object-contain object-center" />
+                </div>
+                <p className="text-lg text-gray-800 mb-4">Fun for kids with this 2-in-1 water play sprinkler set. Easy to install and durable, perfect for backyard activities.</p>
+                <p className="text-lg text-gray-800 mb-4">Price: $19.99</p>
+                <a href="https://amzn.to/3KwO1XC" className="bg-emerald text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-dark-emerald">Buy Now</a>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-bold text-emerald mb-4">Electric Water Gun</h3>
+                <div className="w-full h-64 mb-4 overflow-hidden">
+                  <img src={watergun} alt="Electric Water Gun" className="w-full h-full object-contain object-center" />
+                </div>
+                <p className="text-lg text-gray-800 mb-4">Enjoy summer fun with the Electric Water Gun, featuring strong power and up to 25 FT long range. Perfect for kids and adults.</p>
+                <p className="text-lg text-gray-800 mb-4">Price: $23.99</p>
+                <a href="https://amzn.to/459t26A" className="bg-emerald text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-dark-emerald">Buy Now</a>
+              </div>
+            </div>
+          </div>
           {/* Outdoor Sports */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-emerald mb-4">Outdoor Sports</h2>
@@ -152,30 +175,7 @@ const AmazonReferrals: React.FC = () => {
             </div>
           </div>
 
-          {/* Kids' Summer Fun */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-emerald mb-4">Kids' Summer Fun</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-bold text-emerald mb-4">Water Play Sprinkler Set</h3>
-                <div className="w-full h-64 mb-4 overflow-hidden">
-                  <img src={kidsprinker} alt="Water Play Sprinkler Set" className="w-full h-full object-contain object-center" />
-                </div>
-                <p className="text-lg text-gray-800 mb-4">Fun for kids with this 2-in-1 water play sprinkler set. Easy to install and durable, perfect for backyard activities.</p>
-                <p className="text-lg text-gray-800 mb-4">Price: $19.99</p>
-                <a href="https://amzn.to/3KwO1XC" className="bg-emerald text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-dark-emerald">Buy Now</a>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-bold text-emerald mb-4">Electric Water Gun</h3>
-                <div className="w-full h-64 mb-4 overflow-hidden">
-                  <img src={watergun} alt="Electric Water Gun" className="w-full h-full object-contain object-center" />
-                </div>
-                <p className="text-lg text-gray-800 mb-4">Enjoy summer fun with the Electric Water Gun, featuring strong power and up to 25 FT long range. Perfect for kids and adults.</p>
-                <p className="text-lg text-gray-800 mb-4">Price: $23.99</p>
-                <a href="https://amzn.to/459t26A" className="bg-emerald text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-dark-emerald">Buy Now</a>
-              </div>
-            </div>
-          </div>
+
 
           {/* Fitness and Wellness */}
           <div className="mb-12">

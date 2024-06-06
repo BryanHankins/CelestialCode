@@ -4,11 +4,23 @@ const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    alert(`Message sent by ${name} (${email})`);
+
+    const response = await fetch('/.netlify/functions/submit-contact', {
+      method: 'POST',
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      setStatus('Message sent successfully.');
+    } else {
+      setStatus(`Error: ${result.error}`);
+    }
   };
 
   return (
@@ -67,6 +79,7 @@ const Contact: React.FC = () => {
             Send Message
           </button>
         </form>
+        {status && <p className="mt-4 text-lg text-gray-800">{status}</p>}
       </div>
     </div>
   );
