@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const PrivacyPolicy: React.FC = () => {
+
+  useEffect(() => {
+    document.title = 'Privacy Policy - Celestial Code | Protecting Your Privacy';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Learn about Celestial Code\'s privacy practices, including how we collect, use, and protect your personal information.');
+    document.querySelector('meta[name="keywords"]')?.setAttribute('content', 'Celestial Code privacy policy, data protection, personal information, privacy practices, information security');
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-white text-emerald">
       <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg text-center">
         <h1 className="text-4xl font-bold mb-4 text-emerald">Privacy Policy</h1>
         <p className="text-lg mb-4 text-gray-800">
-          At Celestial Code, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website or use our services.
+          At <strong>Celestial Code</strong>, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website or use our services.
         </p>
         <h2 className="text-2xl font-bold mb-2 text-emerald">Information We Collect</h2>
         <p className="text-lg mb-4 text-gray-800">

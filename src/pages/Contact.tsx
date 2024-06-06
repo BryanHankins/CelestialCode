@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.title = 'Contact Us - Celestial Code | Affiliate Marketing Solutions';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Get in touch with Celestial Code for any inquiries or more information about our affiliate marketing services and referral programs.');
+    document.querySelector('meta[name="keywords"]')?.setAttribute('content', 'Celestial Code contact, affiliate marketing, referral company, contact Celestial Code, financial independence');
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,6 +24,9 @@ const Contact: React.FC = () => {
 
     if (response.ok) {
       setStatus('Message sent successfully.');
+      setName('');
+      setEmail('');
+      setMessage('');
     } else {
       setStatus(`Error: ${result.error}`);
     }

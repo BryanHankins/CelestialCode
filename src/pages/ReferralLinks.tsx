@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ReferralLinks: React.FC = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = 'Referral Links - Celestial Code | Recommended Tools and Services';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Discover the best referral links for top tools and services recommended by Celestial Code to enhance your productivity and success in affiliate marketing.');
+    document.querySelector('meta[name="keywords"]')?.setAttribute('content', 'Celestial Code referral links, recommended tools, affiliate marketing, Murf AI, Scalenut, Frase, Writesonic');
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-100 text-emerald">
       <section className="py-20 bg-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-emerald mb-6">Our Referral Links</h1>
+          
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-2 text-emerald">Murf AI</h2>
             <p className="text-lg mb-4 text-gray-800">
@@ -21,6 +28,7 @@ const ReferralLinks: React.FC = () => {
               Go to Murf AI
             </button>
           </div>
+          
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-2 text-emerald">Scalenut</h2>
             <p className="text-lg mb-4 text-gray-800">
@@ -33,6 +41,7 @@ const ReferralLinks: React.FC = () => {
               Go to Scalenut
             </button>
           </div>
+          
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-2 text-emerald">Frase</h2>
             <p className="text-lg mb-4 text-gray-800">
@@ -45,6 +54,7 @@ const ReferralLinks: React.FC = () => {
               Go to Frase
             </button>
           </div>
+          
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-2 text-emerald">Writesonic</h2>
             <p className="text-lg mb-4 text-gray-800">
@@ -57,6 +67,7 @@ const ReferralLinks: React.FC = () => {
               Go to Writesonic
             </button>
           </div>
+          
           <button
             onClick={() => navigate('/contact')}
             className="bg-emerald hover:bg-dark-emerald text-white font-bold py-3 px-6 rounded-full transition duration-300"

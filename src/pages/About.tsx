@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const About: React.FC = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = 'About Us - Celestial Code | Affiliate Marketing Solutions';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Learn about Celestial Code, an affiliate marketing company dedicated to empowering individuals to achieve financial independence through innovative solutions and expert strategies.');
+    document.querySelector('meta[name="keywords"]')?.setAttribute('content', 'Celestial Code, about Celestial Code, affiliate marketing, referral company, financial independence, tech community, Evansville Indiana');
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-100 text-emerald">
@@ -10,10 +16,10 @@ const About: React.FC = () => {
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-emerald mb-6">About Us</h1>
           <p className="text-lg text-gray-800 mb-6">
-            Celestial Code is a company based in Evansville, Indiana, dedicated to empowering individuals to achieve financial independence through affiliate marketing. Our mission is to provide innovative solutions and expert strategies to help you maximize your earning potential.
+            <strong>Celestial Code</strong> is a company based in <strong>Evansville, Indiana</strong>, dedicated to empowering individuals to achieve <strong>financial independence</strong> through <strong>affiliate marketing</strong>. Our mission is to provide innovative solutions and expert strategies to help you maximize your earning potential.
           </p>
           <p className="text-lg text-gray-800 mb-6">
-            In addition to our affiliate marketing services, we are passionate about spreading the joys of the information technology sector to Evansville, a place where there really isn't a tech sector at all. We aim to foster a thriving tech community and inspire others to explore the exciting opportunities within the IT industry.
+            In addition to our affiliate marketing services, we are passionate about spreading the joys of the <strong>information technology</strong> sector to Evansville, a place where there really isn't a tech sector at all. We aim to foster a thriving tech community and inspire others to explore the exciting opportunities within the IT industry.
           </p>
           <p className="text-lg text-gray-800 mb-6">
             Join us on our mission to revolutionize the way people make money online and bring the benefits of the tech sector to new regions.
@@ -33,7 +39,6 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* New Section */}
       <section className="py-20 bg-gray-100 text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-emerald mb-4">Our Commitment to Youth Development</h2>

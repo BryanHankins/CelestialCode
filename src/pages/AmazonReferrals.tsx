@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import air from '../assets/air matress.jpg';
 import badmit from '../assets/badmitten.jpg';
 import camp from '../assets/camping stove.jpg';
@@ -15,6 +16,12 @@ import waterproof from '../assets/waterproof phone.jpg';
 import yogamat from '../assets/yogamat.jpg';
 
 const AmazonReferrals: React.FC = () => {
+  useEffect(() => {
+    document.title = 'Amazon Referrals - Celestial Code | Summer Essentials and More';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Discover top Amazon products recommended by Celestial Code for the perfect summer. From camping gear to fitness trackers, find all your summer essentials here.');
+    document.querySelector('meta[name="keywords"]')?.setAttribute('content', 'Amazon referrals, summer essentials, camping gear, fitness trackers, kids summer fun, outdoor sports, picnic essentials, beach essentials');
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-emerald">
       {/* Header */}
@@ -26,8 +33,8 @@ const AmazonReferrals: React.FC = () => {
       {/* Content */}
       <section className="py-12">
         <div className="container mx-auto px-6">
-                    {/* Kids' Summer Fun */}
-                    <div className="mb-12">
+          {/* Kids' Summer Fun */}
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-emerald mb-4">Kids' Summer Fun</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -50,6 +57,7 @@ const AmazonReferrals: React.FC = () => {
               </div>
             </div>
           </div>
+          
           {/* Outdoor Sports */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-emerald mb-4">Outdoor Sports</h2>
@@ -175,8 +183,6 @@ const AmazonReferrals: React.FC = () => {
             </div>
           </div>
 
-
-
           {/* Fitness and Wellness */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-emerald mb-4">Fitness and Wellness</h2>
@@ -201,7 +207,6 @@ const AmazonReferrals: React.FC = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </div>
