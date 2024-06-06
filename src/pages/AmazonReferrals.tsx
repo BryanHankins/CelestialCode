@@ -44,7 +44,7 @@ const AmazonReferrals: React.FC = () => {
                 <div className="w-full h-64 mb-4 overflow-hidden">
                   <img src={watergun} alt="Electric Water Gun" className="w-full h-full object-contain object-center" />
                 </div>
-                <p className="text-lg text-gray-800 mb-4">Enjoy summer fun with the Electric Water Gun, featuring strong power and up to 25 FT long range. Perfect for kids and adults.</p>
+                <p className="text-lg text-gray-800 mb-4">Enjoy summer fun with this Electric Water Gun, featuring strong power and up to 25 FT long range. Perfect for kids and adults.</p>
                 <p className="text-lg text-gray-800 mb-4">Price: $23.99</p>
                 <a href="https://amzn.to/459t26A" className="bg-emerald text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-dark-emerald">Buy Now</a>
               </div>

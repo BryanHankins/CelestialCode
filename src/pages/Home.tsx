@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from '../components/Modal';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,6 +6,32 @@ const Home: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    document.title = 'Celestial Code - Leading Referral Company for Affiliate Marketing';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Celestial Code empowers you to achieve financial independence through innovative affiliate marketing solutions.');
+    document.querySelector('meta[name="keywords"]')?.setAttribute('content', 'Celestial Code, affiliate marketing, referral company, financial independence, affiliate programs');
+
+    // Adding structured data (schema markup)
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify({
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Celestial Code",
+      "url": "https://celestialcode.netlify.app/",
+      "logo": "https://celestialcode.netlify.app/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/celestialcode",
+        "https://www.twitter.com/celestialcode",
+        "https://www.linkedin.com/company/celestialcode"
+      ]
+    });
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -30,7 +56,6 @@ const Home: React.FC = () => {
           >
             Join Our Email List
           </button>
-
         </div>
       </section>
 
