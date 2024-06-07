@@ -91,7 +91,7 @@ const AmazonReferrals: React.FC = () => {
     <div className="min-h-screen bg-white text-emerald">
       <header className="bg-emerald text-white text-center py-6">
         <h1 className="text-4xl font-bold">Summer Essentials</h1>
-        <p className="text-xl">Discover top products for the perfect summer straight from Amazons Best</p>
+        <p className="text-xl">Discover top products for the perfect summer straight from Amazon's Warehouse</p>
       </header>
 
       <SearchBar onSearch={setSearchQuery} />
