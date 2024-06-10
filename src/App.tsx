@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/Privacypolicy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Printer from './pages/Printer'
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/amazon-referrals" element={<AmazonReferrals />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/printer" element={<Printer/>} />
           </Routes>
         </main>
         <Footer />

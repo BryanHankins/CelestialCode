@@ -50,6 +50,13 @@
   </url>
 
   <!-- Other Important Pages -->
+    <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://celestialcode.netlify.app/Printer</loc>
+    <lastmod>2024-6-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <!-- Add other pages here as needed -->
   <!-- Example: Blog Page -->
   <url>

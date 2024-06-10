@@ -38,6 +38,16 @@ const Footer: React.FC = () => {
         </div>
         <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0">
           <NavLink
+            to="/Printer"
+            className={({ isActive }) =>
+              isActive ? 'text-white font-bold mx-4' : 'text-white hover:text-gray-300 mx-4'
+            }
+          >
+            About
+          </NavLink>
+        </div>
+        <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0">
+          <NavLink
             to="/referral-links"
             className={({ isActive }) =>
               isActive ? 'text-white font-bold mx-4' : 'text-white hover:text-gray-300 mx-4'
