@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/icon.png'; // Import your logo here
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -20,7 +21,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-emerald p-4">
       <div className="flex justify-between items-center">
-        <div className="text-white text-lg font-bold">Celestial Code LLC</div>
+        <div className="flex items-center">
+          <img src={logo} alt="Celestial Code LLC Logo" className="h-8 w-8 mr-2" /> 
+          <div className="text-white text-lg font-bold">Celestial Code LLC</div>
+        </div>
         <div className="sm:hidden">
           <button
             onClick={toggleMobileMenu}
