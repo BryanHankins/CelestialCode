@@ -218,7 +218,7 @@ const LaptopGuideArticle: React.FC = () => {
             ))}
           </ul>
           <p className="mb-4"><strong>Ideal Use Cases:</strong> {laptop.idealUseCases}</p>
-          <a href={laptop.link} className="inline-block px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700">Try it out here</a>
+          <a href={laptop.link} className="inline-block px-4 py-2 text-white bg-emerald hover:bg-dark-emerald rounded">Try it out here</a>
         </div>
       ))}
     </div>
