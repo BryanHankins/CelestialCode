@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Printer from './pages/Printer'
 import LaptopArticle from './pages/LaptopGuideArticle'
+import Blog from './pages/Bloglist'
 
 
 const App: React.FC = () => {
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/printer" element={<Printer/>} />
             <Route path="/LaptopArticle" element={<LaptopArticle/>} />
+            <Route path="/Blog" element={<Blog/>} />
           </Routes>
         </main>
         <Footer />

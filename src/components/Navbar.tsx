@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-emerald p-4">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center"> 
         <div className="flex items-center">
           <img src={logo} alt="Celestial Code LLC Logo" className="h-8 w-8 mr-2" /> 
           <div className="text-white text-lg font-bold">Celestial Code LLC</div>
@@ -68,6 +68,16 @@ const Navbar: React.FC = () => {
               }
             >
               About
+            </NavLink>
+          </div>
+          <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0">
+            <NavLink
+              to="/Blog"
+              className={({ isActive }) =>
+                isActive ? 'text-white font-bold mx-4' : 'text-white hover:text-gray-300 mx-4'
+              }
+            >
+              Blog
             </NavLink>
           </div>
           <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0 relative">

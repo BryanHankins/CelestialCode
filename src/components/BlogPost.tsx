@@ -1,5 +1,6 @@
 // src/components/BlogPost.tsx
 import React from 'react';
+import LaptopG from '../pages/LaptopGuideArticle'
 
 interface BlogPostProps {
   title: string;

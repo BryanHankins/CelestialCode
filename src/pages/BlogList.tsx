@@ -6,7 +6,7 @@ const blogs = [
     title: "Top 7 Laptops Across Different Price Ranges and Purposes",
     excerpt: "Choosing the right laptop can be challenging with so many options available in the market. This guide reviews seven top laptops across different price ranges and purposes to help you make an informed decision.",
     link: "https://amzn.to/3yWbTRJ",
-    imageUrl: "https://via.placeholder.com/800x400", // Replace with actual image URL
+    imageUrl: "https://m.media-amazon.com/images/I/81ZvaBihNsL._AC_SX466_.jpg", // Replace with actual image URL
   },
   // Add more blogs here...
 ];
@@ -22,7 +22,7 @@ const BlogList: React.FC = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">{blog.title}</h2>
               <p className="text-md text-gray-700">{blog.excerpt}</p>
-              <a href={blog.link} className="inline-block px-4 py-2 text-md font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Read more</a>
+              <a href={blog.link} className="inline-block px-4 py-2 text-md font-medium text-white bg-emerald hover:bg-dark-emerald rounded ">Read more</a>
             </div>
           </div>
         ))}

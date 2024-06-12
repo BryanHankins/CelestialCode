@@ -66,7 +66,7 @@
   <!-- Add other pages here as needed -->
   <!-- Example: Blog Page -->
   <url>
-    <loc>https://celestialcode.netlify.app/blog</loc>
+    <loc>https://celestialcode.netlify.app/Blog</loc>
     <lastmod>2024-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
