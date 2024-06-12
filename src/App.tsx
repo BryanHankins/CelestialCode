@@ -10,8 +10,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Printer from './pages/Printer'
 import LaptopArticle from './pages/LaptopGuideArticle'
-import BlogList from './pages/Bloglist'
-
+import Blog from './components/Bloglist'
+import Top7Laptops from './Blog/Top7Laptops';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -38,7 +38,8 @@ const App: React.FC = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/printer" element={<Printer/>} />
             <Route path="/LaptopArticle" element={<LaptopArticle/>} />
-            <Route path="/BlogList" element={<BlogList/>} />
+            <Route path="/blog/top-7-laptops" element={<Top7Laptops/>} />
+            <Route path="/BlogList" element={<Blog/>} />
           </Routes>
         </main>
         <Footer />
