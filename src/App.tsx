@@ -9,6 +9,8 @@ import PrivacyPolicy from './pages/Privacypolicy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Printer from './pages/Printer'
+import LaptopArticle from './pages/LaptopGuideArticle'
+
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -34,6 +36,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/printer" element={<Printer/>} />
+            <Route path="/LaptopArticle" element={<LaptopArticle/>} />
           </Routes>
         </main>
         <Footer />

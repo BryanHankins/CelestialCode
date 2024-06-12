@@ -53,6 +53,12 @@
     <!-- Privacy Policy Page -->
   <url>
     <loc>https://celestialcode.netlify.app/Printer</loc>
+    <lastmod>2024-6-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://celestialcode.netlify.app/LaptopGuideArticle</loc>
     <lastmod>2024-6-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
