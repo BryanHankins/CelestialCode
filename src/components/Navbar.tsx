@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0">
             <NavLink
-              to="/Blog"
+              to="/BlogList"
               className={({ isActive }) =>
                 isActive ? 'text-white font-bold mx-4' : 'text-white hover:text-gray-300 mx-4'
               }
