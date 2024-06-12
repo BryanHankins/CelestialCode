@@ -5,7 +5,7 @@ const blogs = [
   {
     title: "Top 7 Laptops Across Different Price Ranges and Purposes",
     excerpt: "Choosing the right laptop can be challenging with so many options available in the market. This guide reviews seven top laptops across different price ranges and purposes to help you make an informed decision.",
-    link: "https://amzn.to/3yWbTRJ",
+    link: "https://celestialcode.netlify.app/LaptopArticle",
     imageUrl: "https://m.media-amazon.com/images/I/81ZvaBihNsL._AC_SX466_.jpg", // Replace with actual image URL
   },
   // Add more blogs here...
