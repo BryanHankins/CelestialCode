@@ -73,7 +73,7 @@
   <!-- Example: Blog Page -->
   <url>
     <loc>https://celestialcode.netlify.app/BlogList</loc>
-    <lastmod>2024-06-16</lastmod>
+    <lastmod>2024-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
