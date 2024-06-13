@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const laptops = [
@@ -54,30 +53,30 @@ const laptops = [
     link: "https://amzn.to/3yXaKt7"
   },
   {
-    title: "High-End Laptop: MacBook Pro 16-inch",
-    overview: "The MacBook Pro 16-inch is a premium laptop that delivers exceptional performance, especially for creative professionals. With its powerful hardware and stunning Retina display, it’s designed to handle the most demanding tasks.",
+    title: "High-End Laptop: Microsoft Surface Laptop 5 13.5\"",
+    overview: "The Microsoft Surface Laptop 5 13.5\" is a premium laptop that delivers exceptional performance, especially for creative professionals. With its powerful hardware and stunning 13.5-inch touchscreen display, it’s designed to handle the most demanding tasks.",
     keyFeatures: [
-      "Processor: Apple M1 Pro or M1 Max",
-      "RAM: 16GB (configurable up to 64GB)",
-      "Storage: 512GB SSD (configurable up to 8TB)",
-      "Display: 16-inch Retina display with True Tone",
-      "Battery Life: Up to 21 hours",
-      "Operating System: macOS Monterey"
+      "Processor: Intel Core i5-1245U",
+      "RAM: 16GB",
+      "Storage: 512GB SSD",
+      "Display: 13.5-inch touchscreen with a resolution of 2256 x 1504",
+      "Battery Life: Up to 18 hours",
+      "Operating System: Windows 11 Pro"
     ],
     pros: [
-      "Outstanding performance with M1 Pro/Max chips",
-      "Gorgeous Retina display",
+      "Outstanding performance with Intel Evo Platform",
+      "Gorgeous touchscreen display",
       "Excellent battery life",
-      "Premium build quality"
+      "Premium build quality with Corning Gorilla Glass 5"
     ],
     cons: [
       "Expensive",
       "Limited port selection",
-      "macOS may not be suitable for all users"
+      "Windows 11 Pro may not be suitable for all users"
     ],
-    idealUseCases: "The MacBook Pro 16-inch is perfect for creative professionals, including graphic designers, video editors, and software developers who need top-notch performance and a high-quality display.",
-    imageUrl: "https://m.media-amazon.com/images/I/71b7B8OVHvL._AC_SX679_.jpg", // Replace with actual image URL
-    link: "https://amzn.to/3KGnUgF"
+    idealUseCases: "The Microsoft Surface Laptop 5 13.5\" is perfect for creative professionals, including graphic designers, video editors, and software developers who need top-notch performance and a high-quality display.",
+    imageUrl: "https://m.media-amazon.com/images/I/517mJfK2nmL._AC_.jpg", // Replace with actual image URL
+    link: "https://amzn.to/4cjqll9"
   },
   {
     title: "Gaming Laptop: ASUS ROG Zephyrus G14",
@@ -226,4 +225,3 @@ const LaptopGuideArticle: React.FC = () => {
 };
 
 export default LaptopGuideArticle;
-
