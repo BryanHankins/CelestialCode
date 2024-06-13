@@ -3,30 +3,30 @@ import React from 'react';
 
 const laptops = [
   {
-    title: "Budget Laptop: Acer Aspire 5",
-    overview: "The Acer Aspire 5 is an excellent budget laptop that offers a great balance between performance and affordability. Ideal for students and everyday users, this laptop provides all the essential features without breaking the bank.",
+    title: "Budget Laptop: Lenovo IdeaPad 3i Chromebook",
+    overview: "The Lenovo IdeaPad 3i Chromebook is an excellent budget laptop that provides smooth multitasking and speedy performance. With a 15.6” FHD display, it offers vibrant visuals, making it ideal for both work and play on the go. This Chromebook is perfect for students and everyday users looking for an affordable yet reliable device.",
     keyFeatures: [
       "Processor: Intel Core i5-1135G7",
       "RAM: 8GB",
-      "Storage: 256GB SSD",
+      "Storage: 64GB eMMC",
       "Display: 15.6-inch Full HD (1920 x 1080)",
-      "Battery Life: Up to 8 hours",
-      "Operating System: Windows 10 Home"
+      "Battery Life: Up to 10 hours",
+      "Operating System: Chrome OS"
     ],
     pros: [
       "Affordable price",
       "Solid performance for everyday tasks",
       "Good battery life",
-      "Full HD display"
+      "Crisp and clear Full HD display"
     ],
     cons: [
-      "Build quality is average",
-      "Limited storage space",
-      "Not suitable for heavy gaming or professional graphics work"
+      "Limited storage capacity",
+      "Not suitable for heavy gaming or professional graphics work",
+      "Chrome OS limitations for some professional software"
     ],
-    idealUseCases: "The Acer Aspire 5 is perfect for students, casual users, and anyone who needs a reliable laptop for web browsing, streaming, and basic productivity tasks.",
-    imageUrl: "https://m.media-amazon.com/images/I/71vvXGmdKWL._AC_SX466_.jpg", // Replace with actual image URL
-    link: "https://amzn.to/3yVnNeF"
+    idealUseCases: "The Lenovo IdeaPad 3i Chromebook is perfect for students, casual users, and anyone who needs a dependable laptop for web browsing, streaming, and basic productivity tasks. Its affordability and performance make it a great choice for those on a budget.",
+    imageUrl: "https://m.media-amazon.com/images/I/81IR9ZadevL._AC_SX679_.jpg", // Replace with actual image URL
+    link: "https://amzn.to/45pf6Wb"
   },
   {
     title: "Mid-Range Laptop: Lenovo ThinkPad E15",
