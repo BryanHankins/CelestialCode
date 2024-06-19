@@ -33,6 +33,15 @@
     <priority>0.8</priority>
   </url>
 
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://celestialcode.netlify.app/Store</loc>
+    <lastmod>2024-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Amazon Referrals Page -->
   <url>
     <loc>https://celestialcode.netlify.app/amazon-referrals</loc>

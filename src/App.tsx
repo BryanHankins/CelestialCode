@@ -12,8 +12,24 @@ import Printer from './pages/Printer'
 import LaptopArticle from './pages/LaptopGuideArticle'
 import Blog from './components/Bloglist'
 import Top7Laptops from './Blog/Top7Laptops';
+import Store from './pages/Productlist'
+
+import Karet from './components/Cart'
+import ProductList from './pages/Productlist'
+ 
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+  image: string;
+}
+
+
+
 
 const App: React.FC = () => {
+
   useEffect(() => {
     const handleGoogleTagManager = () => {
       if (window.gtag) {
@@ -40,6 +56,8 @@ const App: React.FC = () => {
             <Route path="/LaptopArticle" element={<LaptopArticle/>} />
             <Route path="/blog/top-7-laptops" element={<Top7Laptops/>} />
             <Route path="/BlogList" element={<Blog/>} />
+            <Route path="/Store" element={<Store/>} />
+          
           </Routes>
         </main>
         <Footer />
