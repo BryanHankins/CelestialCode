@@ -14,8 +14,6 @@ import Blog from './components/Bloglist'
 import Top7Laptops from './Blog/Top7Laptops';
 import Store from './pages/Productlist'
 
-import Karet from './components/Cart'
-import ProductList from './pages/Productlist'
  
 interface Product {
   id: number;
