@@ -15,14 +15,6 @@ import Top7Laptops from './Blog/Top7Laptops';
 import Store from './pages/Productlist'
 
  
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  image: string;
-}
-
 
 
 
