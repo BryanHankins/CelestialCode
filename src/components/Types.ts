@@ -1,10 +1,8 @@
-// src/types.ts
+// src/components/Types.ts
 export interface Product {
-    id: string;
-    title: string;
-    price: string;
-    description: string;
-    image: string;
-    name?: string; // Optional, for local products
-  }
-  
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  price: string;
+}

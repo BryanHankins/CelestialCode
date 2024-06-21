@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SearchBar from '../components/SearchBar';
 import Cart from '../components/Cart';
 import { fetchShopifyProducts } from '../components/Shopify';
-import { Product } from '../components/Types'
-
-
+import { Product } from '../components/Types';
 
 const Store: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
