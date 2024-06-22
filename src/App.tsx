@@ -12,7 +12,6 @@ import Printer from './pages/Printer'
 import LaptopArticle from './pages/LaptopGuideArticle'
 import Blog from './components/Bloglist'
 import Top7Laptops from './Blog/Top7Laptops';
-import Store from './pages/Productlist'
 
  
 
@@ -46,7 +45,6 @@ const App: React.FC = () => {
             <Route path="/LaptopArticle" element={<LaptopArticle/>} />
             <Route path="/blog/top-7-laptops" element={<Top7Laptops/>} />
             <Route path="/BlogList" element={<Blog/>} />
-            <Route path="/Store" element={<Store/>} />
           
           </Routes>
         </main>
