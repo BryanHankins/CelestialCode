@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow p-4">
+    <header className="bg-emerald shadow p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="Celestial Code LLC Logo" className="h-10 w-10 mr-2" />
