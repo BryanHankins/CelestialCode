@@ -71,14 +71,14 @@ const Navbar: React.FC = () => {
             </NavLink>
           </div>
           <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0">
-            <NavLink
-              to="/Store"
-              className={({ isActive }) =>
-                isActive ? 'text-white font-bold mx-4' : 'text-white hover:text-gray-300 mx-4'
-              }
+            <a
+              href="https://celestialcode.myshopify.com/"
+              className="text-white hover:text-gray-300 mx-4"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Store
-            </NavLink>
+            </a>
           </div>
           <div className="w-full sm:w-auto flex justify-center mb-4 sm:mb-0">
             <NavLink
@@ -150,6 +150,15 @@ const Navbar: React.FC = () => {
             >
               About
             </NavLink>
+            <a
+              href="https://celestialcode.myshopify.com/"
+              className="text-white hover:text-gray-300 mb-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={toggleMobileMenu}
+            >
+              Store
+            </a>
             <button
               onClick={toggleDropdown}
               className="text-white hover:text-gray-300 mb-4 focus:outline-none"
